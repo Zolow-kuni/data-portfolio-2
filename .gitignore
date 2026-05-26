@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+
+# Large binary outputs
+*.db
+*.sqlite
+
+# IDE / OS
+.claude/
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# R artifacts
+*.Rhistory
+*.RData
+.Rproj.user/
+
+# Jupyter
+.ipynb_checkpoints/
