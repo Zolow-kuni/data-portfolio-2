@@ -3,16 +3,21 @@
 # Run: Rscript eda.R
 
 # ── Setup ──────────────────────────────────────────────────────────────────────
+user_lib <- file.path(Sys.getenv("LOCALAPPDATA"), "R", "win-library",
+                      paste0(R.version$major, ".", substr(R.version$minor, 1, 1)))
+if (!dir.exists(user_lib)) dir.create(user_lib, recursive = TRUE)
+.libPaths(c(user_lib, .libPaths()))
+
 required_packages <- c("tidyverse","ggplot2","randomForest",
                        "rpart","caret","pROC","corrplot","dplyr")
 new_packages <- required_packages[!(required_packages %in%
                 installed.packages()[,"Package"])]
 if (length(new_packages)) {
   tryCatch(
-    install.packages(new_packages, repos = "https://cran.r-project.org"),
+    install.packages(new_packages, lib = user_lib, repos = "https://cran.r-project.org"),
     error = function(e) {
       message("First install attempt failed, retrying: ", conditionMessage(e))
-      install.packages(new_packages, repos = "https://cran.r-project.org")
+      install.packages(new_packages, lib = user_lib, repos = "https://cran.r-project.org")
     }
   )
 }

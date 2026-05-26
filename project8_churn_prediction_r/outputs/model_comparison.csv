@@ -1,0 +1,4 @@
+"Model","Accuracy","Precision","Recall","F1","AUC"
+"Logistic Regression","79.1%","62.6%","52.2%","56.9%",0.837
+"Random Forest","78.7%","63%","47.4%","54.1%",0.824
+"Decision Tree","78%","64.7%","37.2%","47.2%",0.781
