@@ -56,6 +56,16 @@ python clean_data.py
 
 ---
 
+## Certification Project
+
+| # | Project | Tools | Dataset | Key Skills |
+|---|---------|-------|---------|------------|
+| G1 | [Automatidata × NYC TLC — Taxi Fare Prediction](https://github.com/Zolow-kuni/automatidata-nyc-tlc) | Python · Pandas · Matplotlib · Seaborn | NYC TLC Yellow Taxi 2017 (22,699 rows) | EDA, PACE workflow, regression prep, executive summary |
+
+*Completed as part of the [Google Advanced Data Analytics Certificate](https://www.coursera.org/professional-certificates/google-advanced-data-analytics). Covers the full PACE workflow — data inspection, feature engineering, outlier analysis, correlation heatmaps, and stakeholder-ready reporting.*
+
+---
+
 ## Part of a larger portfolio
 
 Projects 1–4 are in [data-portfolio](https://github.com/Zolow-kuni/data-portfolio):
